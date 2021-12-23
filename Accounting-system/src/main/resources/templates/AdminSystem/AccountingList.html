@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{AdminSystem/AdminSystemTemplate.html}">
+<head>
+<title>AccountingList</title>
+</head>
+<main layout:fragment="content">
+	<div class="container-fluid px-4">
+		<h1 class="mt-4">流水帳管理</h1>
+		<ol class="breadcrumb mb-4">
+			<li class="breadcrumb-item"><a href="AccountingList">流水帳紀錄</a></li>
+			<li class="breadcrumb-item active">流水帳管理</li>
+		</ol>
+		<div class="card mb-4">
+			<div class="card-body">
+				<div>
+					<button name="btnAdd">新增</button>
+					<button name="btnDelete">刪除</button>
+					<label>小計 490 元</label>
+				</div>
+			</div>
+			<div class="card-header">
+				<i class="fas fa-table me-1"></i>
+			</div>
+			<div class="card-body">
+				<table id="datatablesSimple">
+					<thead>
+						<tr>
+							<th>建立日期</th>
+							<th>分類</th>
+							<th>收 / 支</th>
+							<th>金額</th>
+							<th>標題</th>
+							<th>其他</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<th>建立日期</th>
+							<th>分類</th>
+							<th>收 / 支</th>
+							<th>金額</th>
+							<th>標題</th>
+							<th>其他</th>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<td>2011/04/25</td>
+							<td>Tiger Nixon</td>
+							<td>System Architect</td>
+							<td>Edinburgh</td>
+							<td>System Architect</td>
+							<td>Edinburgh</td>
+						</tr>
+						<tr>
+							<td>2011/07/25</td>
+							<td>Garrett Winters</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+							<td>2009/01/12</td>
+							<td>Ashton Cox</td>
+							<td>Junior Technical Author</td>
+							<td>San Francisco</td>
+							<td>Junior Technical Author</td>
+							<td>San Francisco</td>
+						</tr>
+						<tr>
+							<td>2012/03/29</td>
+							<td>Cedric Kelly</td>
+							<td>Senior Javascript Developer</td>
+							<td>Edinburgh</td>
+							<td>Senior Javascript Developer</td>
+							<td>Edinburgh</td>
+						</tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
+						<tr>
+							<td>2008/11/28</td>
+							<td>Airi Satou</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+							<td>Accountant</td>
+							<td>Tokyo</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</main>
+</html>

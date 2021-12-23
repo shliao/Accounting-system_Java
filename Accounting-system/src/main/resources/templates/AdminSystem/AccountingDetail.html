@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{AdminSystem/AdminSystemTemplate.html}">
+<head>
+<title>AccountingDetail</title>
+</head>
+<main layout:fragment="content">
+	<div class="container-fluid px-4">
+		<h1 class="mt-4">流水帳管理</h1>
+		<ol class="breadcrumb mb-4">
+			<li class="breadcrumb-item"><a href="AccountingList">流水帳紀錄</a></li>
+			<li class="breadcrumb-item active">流水帳管理</li>
+		</ol>
+		<div class="card mb-4">
+			<div class="card-body">
+				<div>
+					<p>
+						收 / 支 <select name="choice1">
+							<option value="in">收入</option>
+							<option value="out" selected>支出</option>
+						</select>
+					</p>
+					<p>
+						分類 <select name="choice2">
+							<option value="first">我的分類1</option>
+							<option value="second" selected>我的分類2</option>
+							<option value="third">我的分類3</option>
+						</select>
+					</p>
+					<p>
+						金額 <input type="text"> <br>
+					</p>
+					<p>
+						標題 <input type="text"> <br>
+					</p>
+					<p>備註</p>
+					<textarea rows="5" cols="10"></textarea>
+					<br>
+					<input type="submit" value="儲存">
+				</div>
+			</div>
+		</div>
+</main>
+</html>

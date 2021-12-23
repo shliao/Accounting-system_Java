@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{AdminSystem/AdminSystemTemplate.html}">
+<head>
+<title>UserDetail</title>
+</head>
+<main layout:fragment="content">
+	<div class="container-fluid px-4">
+		<h1 class="mt-4">會員管理</h1>
+		<ol class="breadcrumb mb-4">
+			<li class="breadcrumb-item"><a href="UserList">管理者後台</a></li>
+			<li class="breadcrumb-item active">會員管理</li>
+		</ol>
+		<div class="card mb-4">
+			<div class="card-body">
+				<div>
+					<p>帳號 Admin</p>
+					<p>
+						姓名 <input type="text"> <br>
+					</p>
+					<p>
+						Email <input type="text"> <br>
+					</p>
+					<p>
+						等級 <select name="choice2">
+							<option value="first">一般會員</option>
+							<option value="second" selected>管理者</option>
+						</select>
+					</p>
+					<p>建立時間  2021/07/02 03:04:05</p>
+					<p>修改時間  2021/07/02 03:04:05</p>
+					<br>
+					<button name="btnSasve">儲存</button>
+					<button name="btnCancle">取消</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+</html>
