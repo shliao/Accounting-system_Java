@@ -12,14 +12,17 @@ public class AccountingNoteService {
 	@Autowired
     private AccountingNoteRepository repository;
 	
+	//取得第一筆流水帳紀錄
     public LocalDateTime getFirstAccountingNoteDateTime(){
         return repository.GetFirstAccountingNoteDate();
     }
 
+    //取得最後一筆流水帳紀錄
     public LocalDateTime getLastAccountingNoteDateTime(){
         return repository.GetLastAccountingNoteDate();
     }
     
+    //取得總筆數流水帳紀錄
     public int getAccountingNoteTotalCount(){
         return (int)repository.GetAccountingNoteCount();
     }

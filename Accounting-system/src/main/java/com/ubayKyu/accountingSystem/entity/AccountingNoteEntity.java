@@ -9,29 +9,30 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "AccountingNote")
-@Getter @Setter
+@Getter
+@Setter
 public class AccountingNoteEntity {
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID", updatable = false, nullable = false)
     private Integer ID;
 
-	@Column(name="UserID", nullable=false, columnDefinition="uniqueidentifier")
+	@Column(name = "UserID", nullable = false, columnDefinition = "uniqueidentifier")
     private String UserID;
     
-    @Column(name="Caption", nullable=true, columnDefinition="nvarchar(100)")
+    @Column(name = "Caption", nullable = true, columnDefinition = "nvarchar(100)")
     private String Caption;
     
-    @Column(name="Amount", nullable=false, columnDefinition="int")
+    @Column(name = "Amount", nullable = false, columnDefinition = "int")
     private Integer Amount;
     
-    @Column(name="ActType", nullable=false, columnDefinition="int")
+    @Column(name = "ActType", nullable = false, columnDefinition = "int")
     private Integer ActType;
     
-    @Column(name="CreateDate", nullable=false, columnDefinition="datetime default getdate()")
+    @Column(name = "CreateDate", nullable = false, columnDefinition = "datetime")
     private LocalDateTime CreateDate;
     
-    @Column(name="Body", nullable=true, columnDefinition="nvarchar(500)")
+    @Column(name = "Body", nullable = true, columnDefinition = "nvarchar(500)")
     private String Body;
 	
 }

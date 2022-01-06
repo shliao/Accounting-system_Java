@@ -19,7 +19,7 @@ public class DefaultController {
 	@Autowired
 	private UserInfoService userInfoService;
 
-	@GetMapping("/Default")
+	@GetMapping(value = {"/","/Default"})
 	public String defaultPage(Model model) {
 
 		LocalDateTime firstAccountingNote = accountingNoteService.getFirstAccountingNoteDateTime();

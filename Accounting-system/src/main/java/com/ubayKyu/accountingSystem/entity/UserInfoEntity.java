@@ -6,6 +6,7 @@ import java.util.UUID;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -20,7 +21,7 @@ import lombok.Setter;
 @Setter
 public class UserInfoEntity {
 	@Id
-	@GeneratedValue(generator = "UUID")
+	@GeneratedValue(generator = "UUID", strategy = GenerationType.IDENTITY)
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
 	@Column(name = "ID", updatable = false, nullable = false, columnDefinition = "uniqueidentifier")
 	private UUID ID;
@@ -49,6 +50,6 @@ public class UserInfoEntity {
 	@Column(name = "UserLevel", nullable = false)
 	private Integer UserLevel;
 
-	@Column(name = "CreateDate", nullable = false, columnDefinition = "datetime default getdate()")
+	@Column(name = "CreateDate", nullable = false, columnDefinition = "datetime")
 	private LocalDateTime CreateDate;
 }
